@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="dfd1" name="DFD Level 1 - Gym Management">
+    <mxGraphModel dx="1373" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Member" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="E2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Trainer" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="E3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Manager / Admin" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="P1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="1.0&lt;br&gt;Manage Members" vertex="1">
+          <mxGeometry height="80" width="160" x="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="2.0&lt;br&gt;Manage Subscriptions &amp;amp; Payments" vertex="1">
+          <mxGeometry height="80" width="160" x="360" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="P3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="3.0&lt;br&gt;Record Access (Check-in / out)" vertex="1">
+          <mxGeometry height="80" width="160" x="360" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="P4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="4.0&lt;br&gt;Assign &amp;amp; Schedule Trainers" vertex="1">
+          <mxGeometry height="80" width="160" x="360" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="P5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="5.0&lt;br&gt;Generate DSS Reports" vertex="1">
+          <mxGeometry height="80" width="160" x="360" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="D1" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="D1  Gym_Members" vertex="1">
+          <mxGeometry height="60" width="170" x="780" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D3" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="D3  Subscriptions" vertex="1">
+          <mxGeometry height="60" width="170" x="780" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="D4" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="D4  Access_Logs" vertex="1">
+          <mxGeometry height="60" width="170" x="780" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="D2" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="D2  Trainers" vertex="1">
+          <mxGeometry height="60" width="170" x="780" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="F1" edge="1" parent="1" source="E1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="P1" value="Registration details">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F2" edge="1" parent="1" source="E1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="P2" value="Plan choice &amp;amp; payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3" edge="1" parent="1" source="E1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="P3" value="Check-in / check-out">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F4" edge="1" parent="1" source="E2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="P4" value="Availability &amp;amp; session notes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F5" edge="1" parent="1" source="P4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="E2" value="Client list &amp;amp; schedule">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F6" edge="1" parent="1" source="E3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="P5" value="Report request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F7" edge="1" parent="1" source="P5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="E3" value="Active/Inactive ratio &amp;amp; Trainer utilization">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="740" />
+              <mxPoint x="80" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F8" edge="1" parent="1" source="P2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;" target="E1" value="Receipt / renewal notice">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="200" />
+              <mxPoint x="260" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G1" edge="1" parent="1" source="P1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;" target="D1" value="Member records">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G2" edge="1" parent="1" source="P2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;" target="D3" value="Subscription &amp;amp; payment records">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G3" edge="1" parent="1" source="P3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="D4" value="Access log entries">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G4" edge="1" parent="1" source="P4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;" target="D2" value="Trainer records">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G5" edge="1" parent="1" source="D3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;" target="P3" value="Validity check">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="270" />
+              <mxPoint x="440" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G6" edge="1" parent="1" source="P4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="D3" value="Trainer assignment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="490" />
+              <mxPoint x="700" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H1" edge="1" parent="1" source="D1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;" target="P5" value="Member status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="70" />
+              <mxPoint x="1000" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H2" edge="1" parent="1" source="D4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;" target="P5" value="Visit history">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="330" />
+              <mxPoint x="980" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H3" edge="1" parent="1" source="D2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;" target="P5" value="Trainer capacity">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="865" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
