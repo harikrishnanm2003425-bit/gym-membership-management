@@ -43,4 +43,5 @@ It works as a **CRM / TPS** system and gives **DSS** reports for the manager.
 MySQL, MySQL Workbench, Draw.io (diagrams.net), Microsoft Word
 
 ## Author
-Your Name Here
+HARIKRISHNAN M
+
